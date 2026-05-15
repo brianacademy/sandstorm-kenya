@@ -1,0 +1,49 @@
+# ── Root ──────────────────────────────────────────────────────
+.DS_Store
+*.pem
+*.log
+
+# Static prototype files (not part of the Next.js/Medusa project)
+static-prototype/
+backend-storefront/
+assets/
+*.html
+index.css
+main.js
+
+# ── Node ──────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Environment (NEVER commit real secrets) ───────────────────
+.env
+.env.local
+.env.*.local
+# Allow the example templates
+!.env.example
+!.env.production.example
+
+# ── Next.js (storefront) ──────────────────────────────────────
+storefront/.next/
+storefront/out/
+storefront/build/
+storefront/.vercel/
+storefront/next-env.d.ts
+*.tsbuildinfo
+
+# ── Medusa (backend) ──────────────────────────────────────────
+backend/.medusa/
+backend/uploads/
+backend/.cache/
+
+# ── Testing & coverage ────────────────────────────────────────
+coverage/
+
+# ── IDE ───────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
